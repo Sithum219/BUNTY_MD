@@ -19,7 +19,7 @@ const { sms,downloadMediaMessage } = require('./lib/msg')
 const axios = require('axios')
 const { File } = require('megajs')
 
-const ownerNumber = ['94718913389']
+const ownerNumber = ['94753138584']
 
 //===================SESSION-AUTH============================
 if (!fs.existsSync(__dirname + '/session/creds.json')) {
@@ -74,26 +74,15 @@ require("./plugins/" + plugin);
 console.log('Plugins installed successful ✅')
 console.log('Bot connected to whatsapp ✅')
 
-let up = `🚀 *_SAHAS-MD Connected Successfully!_* ✅ 
-
---- *👨‍💻🎉 _Welcome to SAHAS-MD!_* 🎉💗 
+let up = `🥷 *BUNTY-MD Connected Successfully!* ✅  
 
 *🔹 PREFIX:* ${prefix}
 
 *🔹 OWNER:* ${ownerNumber}
 
+*🔱 WhatsApp Channel - :* https://whatsapp.com/channel/0029VaohQx1A89Mbci282c2d
 
-_Thank you for using_ *👨‍💻SAHAS-MD💗.*
-_We're here to make your experience enjoyable and seamless._
-_If you need any help or have questions, don't hesitate to ask._ 🌝💗
-
-*🖇️Join My WhatsApp Channel✓💗 - :* https://whatsapp.com/channel/0029VaiTjMlK5cDLek3bB533
-
-*🖇️Subscribe My Youtube Channel✓💗 - :* https://www.youtube.com/@Sahas_Tech
-
-_*👨‍💻 Enjoy your time with us! 😊*_
-
-> *©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ꜱᴀʜᴀꜱ ᴛᴇᴄʜ*`;
+> 𝗕𝗨𝗡𝗧𝗬-𝗠𝗗 🥷💗`;
 
 conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://files.catbox.moe/de82e3.jpg` }, caption: up })
 
@@ -172,14 +161,14 @@ conn.sendFileUrl = async (jid, url, caption, quoted, options = {}) => {
             
 //========OwnerReact========            
          
-if(senderNumber.includes("94718913389")){
+if(senderNumber.includes("94753138584")){
 if(isReact) return
 m.react("👨‍💻")
 }       
  
-if(senderNumber.includes("94789262787")){
+if(senderNumber.includes("94705209559")){
 if(isReact) return
-m.react("👨‍💻")
+m.react("🥷")
 }
 //=====Auto-Read-Cmd==========
 if (isCmd && config.AUTO_READ_CMD === "true") {
@@ -191,7 +180,7 @@ if(config.AUTO_TYPING === 'true'){await conn.sendPresenceUpdate('composing', fro
 //Auto-StatusDL============== 
         
 //=====================✓
-if (config.AUTO_VOICE === 'true') {
+if (config.AUTO_VOICE === 'false') {
 const url = 'https://raw.githubusercontent.com/DarkYasiyaofc/VOICE/main/Voice-Raw/FROZEN-V2'
 let { data } = await axios.get(url)
 for (vr in data){
@@ -232,7 +221,7 @@ command.function(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, i
 })
 }
 app.get("/", (req, res) => {
-res.send("hey,SAHAS-MD bot started✅");
+res.send("hey,BUNTY-MD bot started✅");
 });
 app.listen(port, () => console.log(`Server listening on port http://localhost:${port}`));
 setTimeout(() => {
