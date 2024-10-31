@@ -7,8 +7,8 @@ function convertToBool(text, fault = 'true') {
 module.exports = {
 SESSION_ID: process.env.SESSION_ID || "zOIUFSDZ#Ex5bQnZHzkhJFRLBoR13B7DASpVYGSxgYJ4Jx5-kwIs",
 MONGODB: process.env.MONGODB || "mongodb+srv://kulathungaasitha319:yjHB0DvFfStNfwPS@cluster0.3oijd.mongodb.net/",
-ALIVE_IMG: process.env.ALIVE_IMG || "https://iili.io/dbFAKoG.jpg",
+ALIVE_IMG: process.env.ALIVE_IMG || "https://unitedcamps.in/Images/file_5538.jpg",
 AUTO_READ_CMD: process.env.AUTO_READ_CMD || "true",
 AUTO_BIO:"true",
-AUTO_VOICE:"true"
+AUTO_VOICE:"false"
 };
