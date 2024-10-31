@@ -1,12 +1,12 @@
 {
-  "name": "SAHAS-MD",
+  "name": "BUNTY-MD",
   "version": "1.0.0",
   "description": "A WhatsApp bot created using Node.js",
   "main": "index.js",
   "scripts": {
-    "start": "pm2 start index.js --deep-monitoring --attach --name SAHAS-MD",
-    "stop": "pm2 stop SAHAS-MD",
-    "restart": "pm2 restart SAHAS-MD"
+    "start": "pm2 start index.js --deep-monitoring --attach --name BUNTY-MD",
+    "stop": "pm2 stop BUNTY-MD",
+    "restart": "pm2 restart BUNTY-MD"
   },
   "dependencies": {
     "@whiskeysockets/baileys": "6.7.8",
